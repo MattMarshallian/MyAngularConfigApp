@@ -1,0 +1,19 @@
+{
+  "name": "my-angular-config-app",
+  "version": "0.0.1",
+  "description": "Building a REST-Backend for Angular with Node.js & Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MyAngularConfigApp"
+  },
+  "author": "Matt Marshall",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
