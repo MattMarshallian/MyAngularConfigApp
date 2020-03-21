@@ -1,9 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
 const app = express();
 const port = 8001;
+var corsOptions = {
+    origin: 'http://example.com'
+}
 
 app.use(bodyParser.json());
+app.use(cors(corsOptions));
+
 app.listen(port, () => {
     console.log('Server started at port ', port);
 });
@@ -35,4 +42,4 @@ app.route('/api/cats/:name').delete((req, res) => {
     res.sendStatus(204)
   })
 
-  
+
